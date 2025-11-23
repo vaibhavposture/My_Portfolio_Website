@@ -5,3 +5,11 @@ function toggleMenu(){
     menu.classList.toggle("open");
     icon.classList.toggle("open");
 }
+function downloadCV() {
+  const link = document.createElement('a');
+  link.href = '../assets/vaibhav posture latest resume2.pdf';  // Correct file path
+  link.download = 'Vaibhav_Posture_DevOps_Resume.pdf';        // Custom filename
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
